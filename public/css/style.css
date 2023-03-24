@@ -1,0 +1,11 @@
+li {
+    list-style: none;
+}
+
+.brand {
+    font-size: 30px;
+}
+
+.aside-ul li:hover {
+    opacity: 0.6;
+}
