@@ -5,139 +5,405 @@
 
 
 @section('dashboard-content')
-    <h1>I'm Dashboard now</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis tempora totam aspernatur nostrum consequatur
-        tempore eum? Alias odio commodi, incidunt hic voluptatum nesciunt sint fugit! Corporis qui nihil id incidunt tempore
-        nulla accusamus libero delectus, eum ullam tempora earum vel ipsa repellendus placeat amet, porro cumque. Laudantium
-        voluptatem praesentium accusantium libero, necessitatibus vel commodi deserunt sunt mollitia facere laboriosam
-        expedita tenetur similique, dolore dolor ex aperiam autem quis illum ab perferendis excepturi modi? Et voluptas quos
-        perspiciatis suscipit ex alias laudantium voluptate vero nostrum? Quas, ratione, explicabo recusandae quasi eaque
-        vel laboriosam et architecto nisi pariatur odio, dolor ea nihil. Rem, neque! Eum esse, quibusdam et maiores eius non
-        aliquam ipsa veritatis laborum rem, mollitia consequuntur, sunt sapiente maxime laudantium illo accusantium ea enim?
-        Vitae quia nemo magni ab nam, provident eos officiis eaque, numquam consequatur et quod ea magnam esse quidem amet
-        corrupti nulla at quis. Provident, tempore! Quidem quibusdam vitae beatae vel cumque voluptate reiciendis recusandae
-        itaque fugit dicta magni alias eligendi, nulla necessitatibus error provident harum quod qui consequuntur facilis
-        fugiat sint sed dolores. Itaque dolor officia dolorum placeat amet, vero laborum eos temporibus explicabo, deserunt
-        alias, dignissimos nisi incidunt rem quam magnam molestias eligendi voluptatum. Ipsa facere nisi quo molestias, odit
-        ea alias itaque repudiandae quidem quam quibusdam eum iste aut veritatis delectus ducimus! Error possimus aliquam
-        quaerat voluptatum quis debitis tenetur nostrum cum fugiat ex natus, a, ullam voluptate placeat eaque laudantium
-        magni excepturi? Repellendus, quas! Molestiae, odio cum sit veniam qui amet obcaecati eius odit repellat et placeat
-        nihil officiis iusto neque rerum, reprehenderit ut ab ipsam? Ad voluptate repellendus nemo similique repellat
-        numquam accusantium quia qui distinctio nulla eaque maxime modi unde amet quo optio nam aliquam voluptatum dolor,
-        veritatis sit harum? Repellendus, odio nisi reprehenderit beatae quis deleniti. Nihil, perferendis odio consequuntur
-        id cumque a. Saepe, aliquid? Ad voluptate iusto alias, doloribus necessitatibus sapiente ipsum obcaecati minima
-        enim. Expedita nam voluptatibus eveniet quis consectetur fuga earum itaque neque consequuntur harum cumque repellat
-        distinctio fugit dolor quam nisi, eius eaque ea nemo tempora est facere animi provident facilis? Sint expedita
-        dignissimos maiores asperiores nulla sed iure esse similique modi. Quas rerum eum ut perspiciatis commodi nisi
-        officiis iusto facere! Quis sit fugit obcaecati doloremque? Fugiat omnis unde vitae laboriosam laudantium dolorem,
-        similique enim consectetur, soluta aliquid ipsam explicabo aliquam, reiciendis at accusamus id tempore officiis
-        facilis magni. Est possimus adipisci, eius quidem illum tempora ea sed, repudiandae, autem iusto repellendus earum
-        officia! Eum quisquam pariatur voluptatibus corrupti nobis consequatur eius atque labore consectetur quod, quae unde
-        cumque asperiores, id nostrum suscipit expedita possimus dolores! Voluptas fugit iusto odit ullam praesentium eius
-        eaque modi? Fugiat facilis doloremque laborum quaerat exercitationem a tempora corrupti deserunt ad cum laudantium
-        expedita voluptas, maxime accusamus adipisci sed accusantium voluptatem itaque! A dolore enim voluptatem, repellat
-        labore, numquam minima in officiis culpa porro eveniet. Dolorum culpa corporis fugiat possimus quaerat dolores, quae
-        labore placeat inventore voluptatem beatae, laborum reiciendis! Architecto, non hic. Rerum, at nesciunt laboriosam
-        commodi enim facilis libero ipsam consequatur temporibus doloribus delectus, dicta, labore sapiente perspiciatis
-        accusantium iusto cumque. Nam recusandae, quod quasi architecto cupiditate possimus! Saepe labore eius incidunt
-        blanditiis voluptatem in odio doloribus excepturi maxime natus eaque voluptatibus facere itaque ab totam quis
-        cumque, rem obcaecati, expedita, consequatur officiis enim veritatis. Quod, voluptatibus cumque dolorem facilis nisi
-        modi voluptatum possimus eius ab, doloribus laborum quae accusantium mollitia, odit asperiores? Neque tempora minus
-        dolores, accusantium deserunt quibusdam fugiat harum sequi alias id incidunt vero amet necessitatibus distinctio
-        eaque expedita omnis non cum libero excepturi voluptates modi quas? Esse maxime doloremque, rem incidunt sit atque
-        expedita nam sequi rerum cumque consequuntur quaerat quos temporibus eveniet aspernatur repudiandae ab aperiam
-        molestiae magnam perspiciatis veniam. Sed eligendi consectetur dolor. Commodi obcaecati aperiam est asperiores id
-        deleniti modi, ipsum cum illum quo dolorum quidem temporibus eos vitae autem earum voluptate nostrum vel ipsam
-        debitis. Provident, necessitatibus dicta ab tempora animi reiciendis quidem aut tempore quod? Nisi necessitatibus
-        non, impedit nam exercitationem esse itaque quae unde doloremque debitis placeat nesciunt perspiciatis, pariatur
-        fugiat harum deserunt ea quia quisquam consequatur et similique libero rem repellendus? Rem rerum delectus quis
-        cumque alias praesentium est voluptatibus saepe, ipsa neque voluptatem quos explicabo, porro expedita? Fugit earum
-        commodi harum suscipit necessitatibus fuga consectetur nam perspiciatis! Consequuntur, non magni ducimus incidunt
-        voluptas alias fugiat velit quis quasi minima, hic temporibus dolore ut obcaecati laboriosam, ipsa officiis numquam
-        ea veritatis rerum? Eum harum amet alias sequi fugit vitae, officiis quas voluptas expedita, atque rem explicabo
-        veniam commodi iusto quod omnis? Recusandae distinctio tempora id ipsum reprehenderit repudiandae nesciunt laborum
-        maiores, ipsam ut sequi exercitationem perspiciatis assumenda et porro! Assumenda reiciendis qui rem dolorum animi
-        dolore deleniti provident iure minima, quod quia? Molestiae exercitationem libero blanditiis possimus, vero debitis
-        magni ex porro, sunt qui tempore quas explicabo non quo labore, dolor facere voluptatibus deleniti voluptates maxime
-        officiis unde. Reprehenderit accusamus, ullam assumenda deserunt delectus eveniet repudiandae velit magni possimus
-        architecto perspiciatis voluptatum consectetur! Iste, magni aperiam consequuntur, corporis laborum reprehenderit aut
-        officia nobis facere possimus velit consequatur assumenda nemo mollitia in illo esse facilis natus soluta? Dicta
-        voluptatem et amet soluta facere reprehenderit iusto illum quia numquam! Ipsam facilis eos nam, omnis aut delectus?
-        Quod atque repellendus voluptatem. Architecto nihil odio expedita reiciendis quia assumenda rerum sapiente minus
-        fuga earum. Animi exercitationem asperiores maiores autem placeat, aperiam debitis nobis eos. Excepturi hic voluptas
-        quibusdam eligendi officiis nostrum id illum, nesciunt sit quo. Eaque praesentium minima quidem odio provident,
-        commodi officiis eius numquam voluptatibus nihil nulla, optio magni a beatae, delectus facere explicabo consectetur
-        accusamus ipsum? Totam dolor placeat ad quam sint, iusto ipsa perspiciatis error nobis accusantium doloribus impedit
-        magnam eum cumque consequuntur adipisci odio dolore inventore, reprehenderit sapiente quaerat! Provident impedit nam
-        aliquid quisquam doloribus. Minima deserunt dignissimos cumque! Eum, blanditiis dolor earum iusto, fugiat facilis
-        itaque incidunt qui omnis eligendi tenetur officiis aspernatur repudiandae minima eveniet quia voluptates aliquam
-        ullam obcaecati odio culpa deleniti expedita eius atque. Quo ex doloremque veniam ullam animi molestiae ea
-        perferendis cupiditate laboriosam saepe asperiores quos nulla voluptatum distinctio, omnis earum aut aliquam harum!
-        Deserunt ea, necessitatibus nulla dolore porro enim laudantium eos vero! Qui repellat itaque mollitia aperiam
-        reprehenderit explicabo aliquid eaque, ratione reiciendis suscipit obcaecati fuga cum libero hic voluptatum quae
-        dolore atque recusandae. Officia, vero doloribus id dolorem vitae est, tenetur aut distinctio quam cumque nam
-        accusantium blanditiis, consequuntur odit ducimus quia ex quisquam! Est sint voluptatum a inventore! Distinctio
-        consectetur minima delectus, blanditiis dolor reiciendis maiores, deserunt voluptate ratione illum debitis
-        voluptatibus veritatis ad! Mollitia voluptate et alias aspernatur dicta commodi? Necessitatibus neque placeat
-        deleniti architecto officiis voluptate, quo, harum dolores temporibus minus sunt sint iure soluta? Mollitia, nemo
-        consequuntur! Facilis odio voluptate dolorum saepe expedita soluta quod, quaerat corporis nulla architecto ea iste
-        similique! Rerum ea delectus tenetur. Reiciendis eveniet fugit pariatur veritatis. Maxime, soluta nihil amet
-        assumenda labore similique. Voluptate quos asperiores earum animi dolorum repellendus? Itaque sint delectus, quo
-        dignissimos eum odit quasi ipsa repellat beatae vel deserunt quod mollitia qui, enim, ab aliquam? Odit voluptatem
-        explicabo ipsum alias quam animi harum quibusdam officia repellendus laudantium nemo suscipit sit facere dolor,
-        maiores delectus autem pariatur eaque repellat, impedit tempore veritatis. Aliquam fugiat quos esse nesciunt optio
-        commodi, at quisquam aut neque officia voluptates autem dolores ut, ex deserunt sapiente sequi totam dolore et
-        quaerat perspiciatis? Vel ut, rem perspiciatis delectus accusamus doloremque velit perferendis sapiente quod odio
-        eveniet dolore sequi sint aliquid? Ipsa pariatur, voluptate temporibus iusto rem rerum unde libero optio. Est ut qui
-        perspiciatis. Doloremque, velit! Ipsam, cum cupiditate velit odit quod eius deleniti pariatur quia dicta delectus
-        tempora nemo esse similique quisquam, eum ipsa! Maxime, nulla. Dicta error neque alias pariatur quasi et obcaecati
-        exercitationem ab delectus sapiente quo, consequuntur amet odit laudantium ipsum eius aliquam ad? Nobis culpa
-        architecto quis consequatur exercitationem suscipit adipisci doloremque temporibus inventore beatae necessitatibus
-        dolor ea, accusantium ut animi sint velit earum! Dignissimos delectus veniam esse sequi porro dicta quidem doloribus
-        pariatur iste culpa? Ipsam qui quis, deserunt quod laborum dolorem odit recusandae quam alias distinctio incidunt
-        assumenda expedita placeat voluptate sunt tempore atque. Ipsum asperiores dignissimos ullam blanditiis. Nobis esse
-        molestiae omnis, distinctio quis deleniti dignissimos enim? Quidem, placeat? Quidem reiciendis repellat cupiditate
-        provident! Maiores, distinctio quam corporis, minima accusantium culpa quas laboriosam magni velit ea neque eos quod
-        dicta amet, nisi hic. Excepturi fugiat cum alias hic facilis aperiam aspernatur quo omnis? Illum quod impedit
-        commodi earum quisquam error porro blanditiis dolorem, dolore enim aperiam saepe at, consequatur accusamus tempora
-        cumque. Consequuntur, beatae, eum similique ipsam perferendis tempore, culpa soluta explicabo unde fugiat cumque
-        distinctio! Sed numquam eos animi. Cumque ab eligendi qui natus, iste iusto ex? Quia sunt magnam est distinctio
-        reiciendis, laboriosam, fuga dolore excepturi maxime sapiente reprehenderit harum quod, totam doloribus quidem modi
-        quisquam inventore ullam nulla omnis porro officia iste rerum? Perspiciatis quasi, fuga ut dolores accusamus
-        veritatis minus, ad deserunt ratione hic reprehenderit consectetur aperiam vitae placeat nulla aliquam ipsum!
-        Placeat totam voluptates quidem. Tenetur repellat assumenda ullam, illo cum optio accusantium ipsum sed perferendis?
-        Aspernatur labore neque dignissimos, molestiae iusto sequi tempora dolores omnis voluptatum, vero unde illo modi
-        beatae atque exercitationem quibusdam veritatis, libero consequuntur. Soluta alias voluptas, minus et placeat a
-        delectus dolore, commodi modi amet repudiandae accusantium ad odio illum ducimus eaque dolores asperiores, nisi
-        quisquam. Magnam architecto dolorem, odit sunt ab nulla vitae distinctio explicabo voluptatum adipisci accusamus
-        optio voluptas, mollitia deserunt illo dolorum in minima asperiores facilis esse vero impedit consequuntur? Nihil
-        quibusdam quae quia corporis expedita recusandae sequi natus voluptatum, possimus incidunt nam ipsam! Quaerat
-        nostrum iste voluptatem, commodi perferendis repellat nesciunt, eius ad ea quasi pariatur veritatis aliquam quae
-        reprehenderit minus asperiores, saepe fugit ut distinctio qui? Corrupti molestias, iste voluptate sint voluptas
-        veniam est ullam praesentium necessitatibus, aspernatur numquam incidunt iure eveniet similique ipsa magnam optio
-        provident dolorum id tenetur. Dicta et dolore laudantium magni, mollitia cupiditate, facilis sit optio quae dolores
-        expedita in sapiente culpa nostrum! Accusantium, delectus. Suscipit amet recusandae est excepturi quis dolorem,
-        numquam pariatur illum sequi temporibus porro, velit autem ipsa labore inventore. Veniam repudiandae in tempore
-        blanditiis officiis? Accusamus dolorem molestias explicabo, dolore hic sed odit iure sapiente atque magnam ipsam
-        odio facilis perspiciatis exercitationem qui cumque! Velit exercitationem quasi ab eveniet. Quis, laudantium culpa
-        asperiores reprehenderit sint cupiditate nobis iusto voluptatibus at adipisci eaque dignissimos vel suscipit autem
-        quaerat quae alias aspernatur molestias nemo doloribus perferendis soluta reiciendis? Doloremque, quae sed deserunt
-        ad rem esse dicta quo dolore accusantium neque, officiis error odio excepturi laboriosam illo nisi a nam distinctio
-        dolor nobis quisquam debitis saepe cupiditate labore! Saepe ipsam voluptate eveniet, odit aspernatur consequuntur
-        repellendus tempora. Libero sit veniam doloribus alias autem quam id minus modi nam eos reiciendis quia cupiditate,
-        soluta ut voluptatem eveniet quo rem necessitatibus exercitationem nesciunt atque deleniti et voluptates. Accusamus
-        qui iure nisi velit rerum ad aliquam quas sed deserunt veniam, esse, at eaque reprehenderit? Laudantium, velit harum
-        perspiciatis inventore numquam tempora, at, consectetur suscipit eos modi dolorum earum. Ipsam hic ullam impedit
-        quas eligendi ea ab labore fuga esse illum, velit et quos corrupti. Veritatis, cum recusandae laborum repellendus
-        voluptas illum blanditiis nobis explicabo ullam! Maiores inventore alias impedit, quod recusandae aspernatur ullam
-        voluptatem saepe? Quibusdam, error quas doloribus exercitationem ipsum deleniti dolore, veritatis veniam sit ducimus
-        inventore provident voluptate, ullam necessitatibus earum. Impedit odio atque illo fuga nulla laboriosam
-        accusantium, eligendi ad in delectus aut culpa quas distinctio doloremque, labore vel debitis vitae deleniti
-        consequatur. Aut doloribus asperiores est? Maiores beatae odio optio, in eius quis accusamus recusandae dicta
-        possimus error! Quia deserunt ut sint non cupiditate expedita corporis, fugit sapiente necessitatibus nesciunt
-        accusamus reprehenderit, quo maiores possimus eos molestiae excepturi hic nemo veniam! Dolores, laboriosam maiores?
-        In, quo odit sapiente nisi eius molestias labore nobis deserunt suscipit dolorum qui numquam, adipisci atque
-        voluptatem, provident accusamus asperiores voluptatibus quaerat ab! Eum atque veritatis nam eos quia tenetur.
-        Numquam sequi, neque mollitia debitis consequuntur, repudiandae nisi necessitatibus at labore vel corrupti sunt
-        quisquam. Sequi, quo dignissimos.</p>
+    <h4>I'm Dashboard now</h4>
+    <div class="content mt-3">
+
+        <div class="col-sm-12">
+            <div class="alert  alert-success alert-dismissible fade show" role="alert">
+                <span class="badge badge-pill badge-success">Success</span> You successfully read this important
+                alert message.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-white bg-flat-color-1">
+                <div class="card-body pb-0">
+                    <div class="dropdown float-right">
+                        <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button"
+                            id="dropdownMenuButton1" data-toggle="dropdown">
+                            <i class="fa fa-cog"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <div class="dropdown-menu-content">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="mb-0">
+                        <span class="count">10468</span>
+                    </h4>
+                    <p class="text-light">Members online</p>
+
+                    <div class="chart-wrapper px-0" style="height:70px;" height="70">
+                        <canvas id="widgetChart1"></canvas>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!--/.col-->
+
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-white bg-flat-color-2">
+                <div class="card-body pb-0">
+                    <div class="dropdown float-right">
+                        <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button"
+                            id="dropdownMenuButton2" data-toggle="dropdown">
+                            <i class="fa fa-cog"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                            <div class="dropdown-menu-content">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="mb-0">
+                        <span class="count">10468</span>
+                    </h4>
+                    <p class="text-light">Members online</p>
+
+                    <div class="chart-wrapper px-0" style="height:70px;" height="70">
+                        <canvas id="widgetChart2"></canvas>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--/.col-->
+
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-white bg-flat-color-3">
+                <div class="card-body pb-0">
+                    <div class="dropdown float-right">
+                        <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button"
+                            id="dropdownMenuButton3" data-toggle="dropdown">
+                            <i class="fa fa-cog"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                            <div class="dropdown-menu-content">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="mb-0">
+                        <span class="count">10468</span>
+                    </h4>
+                    <p class="text-light">Members online</p>
+
+                </div>
+
+                <div class="chart-wrapper px-0" style="height:70px;" height="70">
+                    <canvas id="widgetChart3"></canvas>
+                </div>
+            </div>
+        </div>
+        <!--/.col-->
+
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-white bg-flat-color-4">
+                <div class="card-body pb-0">
+                    <div class="dropdown float-right">
+                        <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button"
+                            id="dropdownMenuButton4" data-toggle="dropdown">
+                            <i class="fa fa-cog"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+                            <div class="dropdown-menu-content">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="mb-0">
+                        <span class="count">10468</span>
+                    </h4>
+                    <p class="text-light">Members online</p>
+
+                    <div class="chart-wrapper px-3" style="height:70px;" height="70">
+                        <canvas id="widgetChart4"></canvas>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--/.col-->
+
+        <div class="col-lg-3 col-md-6">
+            <div class="social-box facebook">
+                <i class="fa fa-facebook"></i>
+                <ul>
+                    <li>
+                        <span class="count">40</span> k
+                        <span>friends</span>
+                    </li>
+                    <li>
+                        <span class="count">450</span>
+                        <span>feeds</span>
+                    </li>
+                </ul>
+            </div>
+            <!--/social-box-->
+        </div>
+        <!--/.col-->
+
+
+        <div class="col-lg-3 col-md-6">
+            <div class="social-box twitter">
+                <i class="fa fa-twitter"></i>
+                <ul>
+                    <li>
+                        <span class="count">30</span> k
+                        <span>friends</span>
+                    </li>
+                    <li>
+                        <span class="count">450</span>
+                        <span>tweets</span>
+                    </li>
+                </ul>
+            </div>
+            <!--/social-box-->
+        </div>
+        <!--/.col-->
+
+
+        <div class="col-lg-3 col-md-6">
+            <div class="social-box linkedin">
+                <i class="fa fa-linkedin"></i>
+                <ul>
+                    <li>
+                        <span class="count">40</span> +
+                        <span>contacts</span>
+                    </li>
+                    <li>
+                        <span class="count">250</span>
+                        <span>feeds</span>
+                    </li>
+                </ul>
+            </div>
+            <!--/social-box-->
+        </div>
+        <!--/.col-->
+
+
+        <div class="col-lg-3 col-md-6">
+            <div class="social-box google-plus">
+                <i class="fa fa-google-plus"></i>
+                <ul>
+                    <li>
+                        <span class="count">94</span> k
+                        <span>followers</span>
+                    </li>
+                    <li>
+                        <span class="count">92</span>
+                        <span>circles</span>
+                    </li>
+                </ul>
+            </div>
+            <!--/social-box-->
+        </div>
+        <!--/.col-->
+
+        <div class="col-xl-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h4 class="card-title mb-0">Traffic</h4>
+                            <div class="small text-muted">October 2017</div>
+                        </div>
+                        <!--/.col-->
+                        <div class="col-sm-8 hidden-sm-down">
+                            <button type="button" class="btn btn-primary float-right bg-flat-color-1"><i
+                                    class="fa fa-cloud-download"></i></button>
+                            <div class="btn-toolbar float-right" role="toolbar" aria-label="Toolbar with button groups">
+                                <div class="btn-group mr-3" data-toggle="buttons" aria-label="First group">
+                                    <label class="btn btn-outline-secondary">
+                                        <input type="radio" name="options" id="option1"> Day
+                                    </label>
+                                    <label class="btn btn-outline-secondary active">
+                                        <input type="radio" name="options" id="option2" checked=""> Month
+                                    </label>
+                                    <label class="btn btn-outline-secondary">
+                                        <input type="radio" name="options" id="option3"> Year
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.col-->
+
+
+                    </div>
+                    <!--/.row-->
+                    <div class="chart-wrapper mt-4">
+                        <canvas id="trafficChart" style="height:200px;" height="200"></canvas>
+                    </div>
+
+                </div>
+                <div class="card-footer">
+                    <ul>
+                        <li>
+                            <div class="text-muted">Visits</div>
+                            <strong>29.703 Users (40%)</strong>
+                            <div class="progress progress-xs mt-2" style="height: 5px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 40%;"
+                                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </li>
+                        <li class="hidden-sm-down">
+                            <div class="text-muted">Unique</div>
+                            <strong>24.093 Users (20%)</strong>
+                            <div class="progress progress-xs mt-2" style="height: 5px;">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 20%;"
+                                    aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="text-muted">Pageviews</div>
+                            <strong>78.706 Views (60%)</strong>
+                            <div class="progress progress-xs mt-2" style="height: 5px;">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 60%;"
+                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </li>
+                        <li class="hidden-sm-down">
+                            <div class="text-muted">New Users</div>
+                            <strong>22.123 Users (80%)</strong>
+                            <div class="progress progress-xs mt-2" style="height: 5px;">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%;"
+                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </li>
+                        <li class="hidden-sm-down">
+                            <div class="text-muted">Bounce Rate</div>
+                            <strong>40.15%</strong>
+                            <div class="progress progress-xs mt-2" style="height: 5px;">
+                                <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="40"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-6">
+            <section class="card">
+                <div class="twt-feed blue-bg">
+                    <div class="corner-ribon black-ribon">
+                        <i class="fa fa-twitter"></i>
+                    </div>
+                    <div class="fa fa-twitter wtt-mark"></div>
+
+                    <div class="media">
+                        <a href="#">
+                            <img class="align-self-center rounded-circle mr-3" style="width:85px; height:85px;"
+                                alt="" src="{{ asset('images/admin.jpg') }}">
+                        </a>
+                        <div class="media-body">
+                            <h2 class="text-white display-6">Jim Doe</h2>
+                            <p class="text-light">Project Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather-category twt-category">
+                    <ul>
+                        <li class="active">
+                            <h5>750</h5>
+                            Tweets
+                        </li>
+                        <li>
+                            <h5>865</h5>
+                            Following
+                        </li>
+                        <li>
+                            <h5>3645</h5>
+                            Followers
+                        </li>
+                    </ul>
+                </div>
+                <div class="twt-write col-sm-12">
+                    <textarea placeholder="Write your Tweet and Enter" rows="1" class="form-control t-text-area"></textarea>
+                </div>
+                <footer class="twt-footer">
+                    <a href="#"><i class="fa fa-camera"></i></a>
+                    <a href="#"><i class="fa fa-map-marker"></i></a>
+                    New Castle, UK
+                    <span class="pull-right">
+                        32
+                    </span>
+                </footer>
+            </section>
+        </div>
+
+
+        <div class="col-xl-3 col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="stat-widget-one">
+                        <div class="stat-icon dib"><i class="ti-money text-success border-success"></i></div>
+                        <div class="stat-content dib">
+                            <div class="stat-text">Total Profit</div>
+                            <div class="stat-digit">1,012</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-xl-3 col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="stat-widget-one">
+                        <div class="stat-icon dib"><i class="ti-user text-primary border-primary"></i></div>
+                        <div class="stat-content dib">
+                            <div class="stat-text">New Customer</div>
+                            <div class="stat-digit">961</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="stat-widget-one">
+                        <div class="stat-icon dib"><i class="ti-layout-grid2 text-warning border-warning"></i></div>
+                        <div class="stat-content dib">
+                            <div class="stat-text">Active Projects</div>
+                            <div class="stat-digit">770</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-6">
+            <div class="card">
+                <div class="card-header">
+                    <h4>World</h4>
+                </div>
+                <div class="Vector-map-js">
+                    <div id="vmap" class="vmap" style="height: 265px;"></div>
+                </div>
+            </div>
+            <!-- /# card -->
+        </div>
+
+
+    </div>
+
 @endsection
