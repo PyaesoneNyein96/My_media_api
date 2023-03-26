@@ -32,21 +32,35 @@
             <div class="form-group row text-center mb-3">
                 <div class="col-3 col-md-2 offset-md-1 text-start">Name</div>
                 <div class="col-md-6">
-                    <input type="text" name="name" value="{{ $user->name }}"
-                        class="form-control form-control-sm shadow-none lock" placeholder="Name . . .">
+                    <input type="text" name="name" value="{{ old('name') ?? $user->name }}"
+                        class="form-control form-control-sm shadow-none lock @error('name')
+                            is-invalid @enderror"
+                        placeholder="Name . . .">
+                    @error('name')
+                        <div class="text-start text-danger small">
+                            {{ $message }}
+                        </div>
+                    @enderror
                 </div>
             </div>
             <div class="form-group row text-center mb-3">
                 <div class="col-3 col-md-2 offset-md-1 text-start ">Email</div>
                 <div class="col-md-6">
-                    <input type="text" name="email" value="{{ $user->email }}"
-                        class="form-control form-control-sm shadow-none lock" placeholder="Email . . .">
+                    <input type="text" name="email" value="{{ old('email') ?? $user->email }}"
+                        class="form-control form-control-sm shadow-none lock @error('email')
+                            is-invalid @enderror"
+                        placeholder="Email . . .">
+                    @error('email')
+                        <div class="text-start text-danger small">
+                            {{ $message }}
+                        </div>
+                    @enderror
                 </div>
             </div>
             <div class="form-group row text-center mb-3">
                 <div class="col-3 col-md-2 offset-md-1 text-start ">Phone</div>
                 <div class="col-md-6">
-                    <input type="text" name="phone" value="{{ $user->phone }}"
+                    <input type="text" name="phone" value="{{ old('phone') ?? $user->phone }}"
                         class="form-control form-control-sm shadow-none lock" placeholder="Phone . . .">
                 </div>
             </div>
@@ -65,7 +79,7 @@
             <div class="form-group row text-center mb-3">
                 <div class="col-3 col-md-2 offset-md-1 text-start ">Address </div>
                 <div class="col-md-6">
-                    <textarea class="form-control shadow-none lock" name="address" rows="2" placeholder="Address . . .">{{ $user->address }}
+                    <textarea class="form-control shadow-none lock" name="address" rows="2" placeholder="Address . . .">{{ old('address') ?? $user->address }}
                 </textarea>
                 </div>
             </div>
@@ -73,8 +87,9 @@
             <div class="form-group row text-center mb-3">
                 <div class="col-3 col-md-2 offset-md-1  text-start ">Biography </div>
                 <div class="col-md-6">
-                    <textarea class="form-control shadow-none lock" name="bio" rows="2" placeholder="Biography . . .">{{ $user->bio }}
+                    <textarea class="form-control shadow-none lock" name="bio" rows="2" placeholder="Biography . . .">{{ old('bio') ?? $user->bio }}
                 </textarea>
+
                 </div>
             </div>
             <div class="btn-wrap text-center mt-4">

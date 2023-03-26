@@ -46,12 +46,8 @@ class ProfileController extends Controller
         Validator::make($req->all(),[
             'name' => 'required',
             'email'=> 'required|unique:users,email,'.$req->id,
-            'phone' => 'required',
-            'address'=>'required',
-            'gender'=>'required',
-            'bio'=>'nullable',
-
-        ])->validated();
+        ]
+        )->validated();
     }
 
 }
