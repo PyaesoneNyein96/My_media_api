@@ -20,6 +20,9 @@ Route::middleware([ 'auth:sanctum',config('jetstream.auth_session'),'verified'])
 
         Route::get('/dashboard',[AuthController::class,'index'])->name('admin@dashboard');
         Route::get('/profile',[ProfileController::class,'index'])->name('admin@Profile');
+        Route::post('/profile/update',[ProfileController::class,'update'])->name('admin@profileUpdate');
+
+
         Route::get('/categories',[CategoryController::class,'index'])->name('admin@Category');
         Route::get('/articles',[ArticleController::class,'index'])->name('admin@articles');
         Route::get('/admin-list',[AdminListController::class,'index'])->name('admin@admin-list');

@@ -229,3 +229,7 @@
 
 
 @endsection
+
+@section('script')
+    @yield('script-content')
+@endsection
