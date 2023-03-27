@@ -97,7 +97,7 @@
                 <span class="btn btn-success btn-sm" id="change-btn">
                     Unlocked
                 </span>
-                <a href="" class="text-decoration-none ms-4">Change Password</a>
+                <a href="{{ route('admin@changePassPage') }}" class="text-decoration-none ms-4">Change Password</a>
 
 
             </div>

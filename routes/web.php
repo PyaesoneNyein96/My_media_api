@@ -21,6 +21,8 @@ Route::middleware([ 'auth:sanctum',config('jetstream.auth_session'),'verified'])
         Route::get('/dashboard',[AuthController::class,'index'])->name('admin@dashboard');
         Route::get('/profile',[ProfileController::class,'index'])->name('admin@Profile');
         Route::post('/profile/update',[ProfileController::class,'update'])->name('admin@profileUpdate');
+        Route::get('/profile/changePassword',[ProfileController::class,'ChangePasswordPage'])->name('admin@changePassPage');
+        Route::post('/profile/changePass', [ProfileController::class,'changePassword'])->name('admin@changePass');
 
 
         Route::get('/categories',[CategoryController::class,'index'])->name('admin@Category');
