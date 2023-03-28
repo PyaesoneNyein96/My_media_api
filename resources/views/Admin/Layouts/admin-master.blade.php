@@ -29,42 +29,57 @@
                         <a href="{{ route('admin@dashboard') }}"> <i class="menu-icon fa fa-laptop"></i>Dashbaord</a>
                     </li>
 
-                    <li>
-                        <a href=" {{ route('admin@Profile') }} "> <i class="menu-icon fa-solid fa-user"></i></i>Profile</a>
-                    </li>
-
-                    <li>
-                        <a href="{{ route('admin@admin-list') }}"> <i class="menu-icon fa-solid fa-users-gear"></i>Admin
-                            List</a>
-                    </li>
-
-                    <li>
-                        <a href="{{ route('admin@articles') }}"><i class="menu-icon  fa-solid fa-book-open"></i>Articles</a>
-                    </li>
-
-                    <li>
-                        <a href="{{ route('admin@Category') }}"> <i class="menu-icon fa fa-tasks"></i>Categories</a>
-                    </li>
-
-                    <li>
-                        <a href="#"> <i class="menu-icon fa-solid fa-heart-circle-bolt"></i>Article's
-                            Features</a>
-                    </li>
-
-                    <li>
-                        <a href="{{ route('admin@trend') }}"> <i class="menu-icon fa fa-area-chart"></i>Trend Articles</a>
-                    </li>
-                    <h3 class="menu-title">More Options</h3><!-- /.menu-title -->
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false"> <i class="menu-icon fa fa-gears fa-lg"></i>Setting</a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            href="{{ route('admin@Profile') }} "> <i class="menu-icon fa-solid fa-user"></i></i>Profile</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-sign-in"></i><a href="{{ route('login') }}">Login</a></li>
-                            <li><i class="menu-icon fa fa-sign-in"></i><a href="page-register.html">Register</a></li>
-                            <li><i class="menu-icon fa fa-paper-plane"></i><a href="pages-forget.html">Forget Pass</a>
+                            <li><i class="menu-icon fa fa-user"></i>
+                                <a href="{{ route('admin@Profile') }}">Profile</a>
                             </li>
-                        </ul>
+                            <li> <i class="menu-icon fa-solid fa-key "></i>
+                                <a href="{{ route('admin@changePassPage') }}">Change Password</a>
+                            </li>
                     </li>
+                </ul>
+                {{-- </li> --}}
+
+                <li>
+                    <a href="{{ route('admin@admin-list') }}"> <i class="menu-icon fa-solid fa-users-gear"></i>Admin
+                        List</a>
+                </li>
+
+                <li>
+                    <a href="{{ route('admin@articles') }}"><i class="menu-icon  fa-solid fa-book-open"></i>Articles</a>
+                </li>
+
+                <li>
+                    <a href="{{ route('admin@Category') }}"> <i class="menu-icon fa fa-tasks"></i>Categories</a>
+                </li>
+
+                <li>
+                    <a href="#"> <i class="menu-icon fa-solid fa-heart-circle-bolt"></i>Article's
+                        Features</a>
+                </li>
+
+                <li>
+                    <a href="{{ route('admin@trend') }}"> <i class="menu-icon fa fa-area-chart"></i>Trend Articles</a>
+                </li>
+
+                <h3 class="menu-title">More Options</h3><!-- /.menu-title -->
+
+                <li class="menu-item-has-children dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="menu-icon fa fa-gears fa-lg"></i>
+                        Setting
+                    </a>
+                    <ul class="sub-menu children dropdown-menu">
+                        <li><i class="menu-icon fa fa-sign-in"></i><a href="{{ route('login') }}">Login</a></li>
+                        <li><i class="menu-icon fa fa-sign-in"></i><a href="page-register.html">Register</a></li>
+                        <li><i class="menu-icon fa fa-paper-plane"></i><a href="pages-forget.html">Forget Pass</a>
+                        </li>
+                    </ul>
+                </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </nav>
@@ -75,7 +90,7 @@
     <div id="right-panel" class="right-panel">
 
         <!-- Header-->
-        <header id="header" class="header" style="position: sticky; top:0px; z-index:10">
+        <header id="header" class="header" style=" position: sticky; top:0px; z-index:10">
 
             <div class="header-menu">
 

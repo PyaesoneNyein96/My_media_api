@@ -70,8 +70,8 @@
                 <div class="col-md-6">
                     <select class="form-select shadow-none form-select-sm lock" name="gender">
                         <option hidden disabled>Select Gender</option>
-                        <option value=1 @selected($user->gender == 1)>Male</option>
-                        <option value=0 @selected($user->gender == 0)>Female</option>
+                        <option value="male" @selected($user->gender == 'male')>Male</option>
+                        <option value="female" @selected($user->gender == 'female')>Female</option>
                     </select>
                 </div>
             </div>

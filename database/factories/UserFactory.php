@@ -24,10 +24,15 @@ class UserFactory extends Factory
      */
     public function definition(): array
     {
+        $city = ['yangon', 'mandalay','taungoo','mawlamyaing','myitkyina'];
+        // $gender = ['male','female'];
         return [
             'name' => $this->faker->name(),
             'email' => $this->faker->unique()->safeEmail(),
             'email_verified_at' => now(),
+            'phone' =>rand(973787878, 90989898980),
+            'address'=>$this->faker->randomElement($city),
+            'gender' =>$this->faker->randomElement(['male','female']),
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
             'two_factor_secret' => null,
             'two_factor_recovery_codes' => null,

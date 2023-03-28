@@ -27,7 +27,12 @@ Route::middleware([ 'auth:sanctum',config('jetstream.auth_session'),'verified'])
 
         Route::get('/categories',[CategoryController::class,'index'])->name('admin@Category');
         Route::get('/articles',[ArticleController::class,'index'])->name('admin@articles');
-        Route::get('/admin-list',[AdminListController::class,'index'])->name('admin@admin-list');
+
+        Route::get('/list',[AdminListController::class,'index'])->name('admin@admin-list');
+        Route::get('/delete/{id}',[AdminListController::class,'delete'])->name('admin@adminList-delete');
+        // Route::post('/search',[AdminListController::class,'search'])->name('admin@userSearch');
+
+
         Route::get('/trend',[TrendArticleController::class,'index'])->name('admin@trend');
     });
 });

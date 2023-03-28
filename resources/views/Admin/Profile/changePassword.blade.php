@@ -50,6 +50,7 @@
                                     <small class="text-danger ps-2">{{ $message }}</small>
                                 @enderror
                             </div>
+
                             <div class="form-group">
                                 <label>New Password</label>
                                 <input type="password" name="newPassword"
@@ -59,11 +60,12 @@
                                     <small class="text-danger ps-2">{{ $message }}</small>
                                 @enderror
                             </div>
+
                             <div class="form-group">
                                 <label>confirm Password</label>
                                 <input type="password" name="confirm_password"
                                     class="form-control @error('confirm_password') is-invalid @enderror"
-                                    placeholder="Old Password">
+                                    placeholder="Confirm Password">
                                 @error('confirm_password')
                                     <small class="text-danger ps-2">{{ $message }}</small>
                                 @enderror
