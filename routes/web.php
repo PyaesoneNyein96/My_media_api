@@ -8,29 +8,36 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\AdminListController;
 use App\Http\Controllers\TrendArticleController;
 
-
+// Route::redirect('/', '/dashboard');
 
 Route::get('/', function () {
     return view('welcome');
 });
 Route::middleware([ 'auth:sanctum',config('jetstream.auth_session'),'verified'])->group(function () {
 
-    Route::redirect('/dashboard', 'admin/dashboard');
+    Route::redirect('/', 'admin/dashboard');
     Route::prefix('admin')->group(function () {
 
         Route::get('/dashboard',[AuthController::class,'index'])->name('admin@dashboard');
+
+        // ADMIN PROFILE
         Route::get('/profile',[ProfileController::class,'index'])->name('admin@Profile');
         Route::post('/profile/update',[ProfileController::class,'update'])->name('admin@profileUpdate');
         Route::get('/profile/changePassword',[ProfileController::class,'ChangePasswordPage'])->name('admin@changePassPage');
         Route::post('/profile/changePass', [ProfileController::class,'changePassword'])->name('admin@changePass');
 
-
-        Route::get('/categories',[CategoryController::class,'index'])->name('admin@Category');
-        Route::get('/articles',[ArticleController::class,'index'])->name('admin@articles');
-
+        // ADMIN USER
         Route::get('/list',[AdminListController::class,'index'])->name('admin@admin-list');
         Route::get('/delete/{id}',[AdminListController::class,'delete'])->name('admin@adminList-delete');
-        // Route::post('/search',[AdminListController::class,'search'])->name('admin@userSearch');
+
+        // ADMIN CATEGORY
+        Route::get('/categories',[CategoryController::class,'index'])->name('admin@Category');
+        Route::post('/categories/add', [CategoryController::class,'addCategories'])->name('admin@categoriesAdd');
+        Route::get('/category/edit/{id}', [CategoryController::class,'editCategory'])->name('admin@categoryEdit');
+        Route::post('/category/update',[CategoryController::class,'updateCategory'])->name('admin@categoryUpdate');
+        Route::get('/category/delete/{id}', [CategoryController::class,'deleteCategory'])->name('admin@categoryDelete');
+
+        Route::get('/articles',[ArticleController::class,'index'])->name('admin@articles');
 
 
         Route::get('/trend',[TrendArticleController::class,'index'])->name('admin@trend');

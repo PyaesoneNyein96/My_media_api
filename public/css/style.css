@@ -13,7 +13,7 @@ li {
     nav {
         position: sticky !important;
         top: 0 !important;
-        height: 50vh;
+        height: 70vh;
     }
 }
 
@@ -23,6 +23,9 @@ li {
     td * {
         font-size: 13px;
     }
+}
+.menu-title-cus {
+    padding: 0 !important;
 }
 
 /* style="position: sticky; top:0px; height:50vh" */
