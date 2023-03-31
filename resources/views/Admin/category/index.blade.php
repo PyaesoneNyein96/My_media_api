@@ -19,11 +19,13 @@
 
 
     <div class="row">
-        <div class="input-wrap col-4  my-4">
+        <div class="input-wrap col-md-5  my-4">
             <form action="{{ route('admin@Category') }}" class=" d-flex" method="get">
                 @csrf
                 <input type="text" name="key" class="form-control form-control-sm me-1 shadow-none"
-                    placeholder="Search users . . ." value={{ request('key') }}>
+                    placeholder="Search Category . . ." value={{ request('key') }}>
+                <a href="{{ route('admin@Category') }}"><button type="button" class="btn btn-close btn-sm mt-1"
+                        style="position: relative; right:35px"></button></a>
                 <button class="btn btn-sm  rounded btn-outline-primary">Search</button>
             </form>
         </div>
@@ -35,9 +37,9 @@
                 <div class="card-body px-3">
                     <div class="card-title">
                         @isset ($categoryEdit)
-                        Update
+                        <span class="text-success">Edit Category</span>
                         @else
-                        Add Category
+                        <span class="text-primary">Add Category</span>
                         @endisset
                     </div>
 
@@ -59,7 +61,7 @@
                             <input type="text" name="categoryName" class="form-control form-control-sm shadow-none @error('categoryName')
                                 is-invalid
                             @enderror" placeholder="Cateogry Name" @isset($categoryEdit)
-                                value="{{ $categoryEdit->title }}" @endisset>
+                                value="{{  old('categoryName', $categoryEdit->title ) }}" @endisset>
                             @error('categoryName')
                             <small class="d-block text-danger">{{ $message }}</small>
                             @enderror
@@ -69,9 +71,9 @@
 
                             <label class="small text-muted mt-3">Add New Category Description here</label>
                             <textarea name="categoryDescription" class="form-control form-control-sm shadow-none @error('categoryDescription')
-is-invalid
-                            @enderror" placeholder="Description .." rows="2">@isset($categoryEdit){{ $categoryEdit->description }} @else  @endisset
-                                </textarea>
+                            is-invalid
+                            @enderror" placeholder="Description .."
+                                rows="2">@isset($categoryEdit){{ old('categoryDescription', $categoryEdit->description) }}@endisset</textarea>
 
                             @error('categoryDescription')
                             <small class="d-block text-danger">{{ $message }}</small>
@@ -80,6 +82,10 @@ is-invalid
 
                             @isset($categoryEdit)
                             <button type="submit" class="btn btn-success btn-sm rounded px-4">Update</button>
+                            <a href="{{ route('admin@Category') }}">
+                                <button type="button" class="btn btn-outline-primary btn-sm rounded px-4">Add New
+                                    category</button>
+                            </a>
                             @else
                             <button type="submit" class="btn btn-primary btn-sm rounded px-4">Add</button>
                             @endisset
@@ -97,6 +103,11 @@ is-invalid
                     <h4 class="mx-auto text-muted mb-3">
                         Categories
                     </h4>
+                    @if ($categories->isEmpty())
+                    <div class="p-3 shadow-sm rounded text-center">
+                        <h3 class="text-muted">There is No Categories</h3>
+                    </div>
+                    @else
                     <ul>
                         @foreach ($categories as $category)
                         <div class="accordion my-2" id="accordion">
@@ -104,7 +115,7 @@ is-invalid
                                 <h2 class="accordion-header">
                                     <button class="accordion-button btn-light btn-sm py-2" type="button"
                                         data-bs-toggle="collapse" data-bs-target="{{ '#z' . $category->id }}">
-                                        <span class="text-muted">{{ $loop->index + 1 }} . </span>
+                                        <span class="text-muted me-3">{{ $loop->index + 1 }} . </span>
                                         {{ $category->title }}
                                     </button>
                                 </h2>
@@ -114,7 +125,8 @@ is-invalid
                                                 class="text-success">{{ $category->title }}</span>
                                         </strong>
 
-                                        <div class="float-end my-3">
+                                        <p class="small">{{ $category->description }}</p>
+                                        <div class="my-3">
                                             <a href="{{ route('admin@categoryEdit', $category->id) }}">
                                                 <button class="btn btn-success btn-sm py-0">Edit</button>
                                             </a>
@@ -123,7 +135,6 @@ is-invalid
                                             </a>
                                         </div>
 
-                                        <p class="small">{{ $category->description }}</p>
 
                                     </div>
                                 </div>
@@ -132,6 +143,8 @@ is-invalid
                         @endforeach
 
                     </ul>
+                    @endif
+
 
                 </div>
             </div>

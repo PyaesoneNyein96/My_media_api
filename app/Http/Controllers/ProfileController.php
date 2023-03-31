@@ -43,7 +43,7 @@ class ProfileController extends Controller
         if(Hash::check(request()->oldPassword, $dbPass )){
                 User::where('id', Auth::id())->update(['password'=> hash::make(request()->newPassword)]);
 
-                return redirect()->route('login')->with('info','Your Password has been Changed Successfully, Please Login again');
+                return redirect()->route('admin@dashboard')->with('info','Your Password has been Changed Successfully, Please Login again');
         }else{
 
             return redirect()->back()->with('err', 'Old password not Match !');

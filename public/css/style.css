@@ -28,4 +28,15 @@ li {
     padding: 0 !important;
 }
 
+.modal-backdrop {
+    visibility: hidden;
+    opacity: 0;
+    z-index: 0;
+    position: relative;
+}
+.modal-content {
+    /* position: absolute !important; */
+    top: 0px;
+    z-index: 15;
+}
 /* style="position: sticky; top:0px; height:50vh" */

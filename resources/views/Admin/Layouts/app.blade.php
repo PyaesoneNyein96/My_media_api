@@ -14,6 +14,10 @@
 
     <!-- ========== Start Section ========== -->
 
+    <!-- ========== Start Custom JS  Alert ========== -->
+
+    <!-- ========== End Custom JS  Alert ========== -->
+
 
     <link rel="apple-touch-icon" href="apple-icon.png">
     <link rel="shortcut icon" href="favicon.ico">
@@ -41,7 +45,7 @@
     </title>
 </head>
 
-<body>
+<body id="body">
     @yield('content')
 </body>
 
@@ -75,6 +79,11 @@
 <script src="{{ asset('vendors/jqvmap/dist/jquery.vmap.min.js') }}"></script>
 <script src="{{ asset('vendors/jqvmap/examples/js/jquery.vmap.sampledata.js') }} "></script>
 <script src="{{ asset('vendors/jqvmap/dist/maps/jquery.vmap.world.js') }}"></script>
+
+
+<!-- ========== Start CUSTOM JS ALERT ========== -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!-- ========== End CUSTOM JS ALERT ========== -->
 
 <!-- ========== End Section ========== -->
 

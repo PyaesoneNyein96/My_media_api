@@ -34,7 +34,17 @@ class DatabaseSeeder extends Seeder
             'gender' => 'male',
             'bio' => 'developer'
         ]);
+        User::create([
+            'name' => 'psn2',
+            'email' =>'psn2@gmail.com',
+            'email_verified_at' => Carbon::now(),
+            'password'=>Hash::make('admin123'),
+            'address' => 'yangon',
+            'phone' => '123',
+            'gender' => 'male',
+            'bio' => 'developer'
+        ]);
 
-        User::factory(10)->create();
+        User::factory(5)->create();
     }
 }

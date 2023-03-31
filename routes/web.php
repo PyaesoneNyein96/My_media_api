@@ -16,6 +16,9 @@ Route::get('/', function () {
 Route::middleware([ 'auth:sanctum',config('jetstream.auth_session'),'verified'])->group(function () {
 
     Route::redirect('/', 'admin/dashboard');
+    Route::redirect('/dashboard', 'admin/dashboard');
+
+
     Route::prefix('admin')->group(function () {
 
         Route::get('/dashboard',[AuthController::class,'index'])->name('admin@dashboard');
@@ -37,7 +40,10 @@ Route::middleware([ 'auth:sanctum',config('jetstream.auth_session'),'verified'])
         Route::post('/category/update',[CategoryController::class,'updateCategory'])->name('admin@categoryUpdate');
         Route::get('/category/delete/{id}', [CategoryController::class,'deleteCategory'])->name('admin@categoryDelete');
 
-        Route::get('/articles',[ArticleController::class,'index'])->name('admin@articles');
+        // ADMIN POSTS
+        Route::get('/post',[ArticleController::class,'index'])->name('admin@articles');
+        Route::post('/post/creation',[ArticleController::class,'create'])->name('admin@postCreate');
+        Route::get('/post/delete',[ArticleController::class,'delete'])->name('admin@postDelete');
 
 
         Route::get('/trend',[TrendArticleController::class,'index'])->name('admin@trend');

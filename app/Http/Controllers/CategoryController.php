@@ -38,7 +38,7 @@ class CategoryController extends Controller
 
 
 
-    //Re Use show page to edit
+    //Re Use show page to Edit
     public function editCategory($id){
 
         $categoryEdit = Category::select('title','description','id')->where('id',$id)->first();
@@ -46,9 +46,8 @@ class CategoryController extends Controller
         return view('Admin.category.index',compact(['categoryEdit','categories']));
     }
 
-    // Update
+    // UPDATE
     public function updateCategory(Request $req){
-
         $category = Category::find($req->id);
         $data = $this->getData($req);
         $this->validationCheck($req);
@@ -65,8 +64,7 @@ class CategoryController extends Controller
     }
 
 
-
-
+    // Private functions
 
     private function getData($req){
         return [
@@ -77,7 +75,7 @@ class CategoryController extends Controller
 
     private function validationCheck($req){
         Validator::make($req->all(), [
-            'categoryName' => 'required',
+            'categoryName' => 'required|unique:categories,title,'.$req->id,
             'categoryDescription' => 'required'
         ])->validated();
     }
