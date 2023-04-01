@@ -43,7 +43,9 @@ Route::middleware([ 'auth:sanctum',config('jetstream.auth_session'),'verified'])
         // ADMIN POSTS
         Route::get('/post',[ArticleController::class,'index'])->name('admin@articles');
         Route::post('/post/creation',[ArticleController::class,'create'])->name('admin@postCreate');
-        Route::get('/post/delete',[ArticleController::class,'delete'])->name('admin@postDelete');
+        Route::get('/post/delete',[ArticleController::class,'delete'])->name('admin@postDelete'); //ajax
+        Route::get('/post/updateDialog',[ArticleController::class,'updatePage'])->name('admin@postUpdateDialog'); //ajax
+        Route::post('/post/update',[ArticleController::class, 'update'])->name('admin@postUpdate');
 
 
         Route::get('/trend',[TrendArticleController::class,'index'])->name('admin@trend');

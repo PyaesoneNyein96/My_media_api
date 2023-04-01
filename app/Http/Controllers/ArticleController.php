@@ -14,6 +14,7 @@ class ArticleController extends Controller
 {
     // LIST
     public function index(){
+
         $categories =  Category::get();
         $posts = Post::select('posts.*','users.name as user_name','categories.title as category_name')
         ->leftJoin('users','posts.user_id', 'users.id')
@@ -23,11 +24,15 @@ class ArticleController extends Controller
         return view('Admin.articles.index',compact('categories','posts'));
     }
 
+
+
+
+
     // CREATE
     public function create(Request $request){
 
         $data = $this->getData($request);
-        $this->validationCheckPost($request);
+        $this->validationCheckPost($request,'upload');
 
         if($request->hasFile('post_img')){
             $img = $request->file('post_img');
@@ -41,10 +46,40 @@ class ArticleController extends Controller
         return redirect()->back()->with('info','Article successfully uploaded ');
     }
 
+
+
+
+
+// UPDATE PAGE
+    public function updatePage(){
+        $postEdit = Post::find(request()->id);
+        $categories=Category::all();
+        return response()->json(['postEdit'=> $postEdit, 'cat'=> $categories], 200 );
+    }
+
+// Update function
+    public function update(Request $request){
+        // dd(request()->toArray());
+        $data = $this->getData($request);
+        $this->validationCheckPost($request,'update');
+
+        if($request->hasFile('post_img')){
+            $img = $request->file('post_img');
+            $imgName = uniqid().'_update_'.$img->getClientOriginalName();
+            $request->file('post_img')->StoreAs('public/Post',$imgName);
+            $data['image'] = $imgName;
+        }
+        Post::where('id',$request->post_id)->update($data);
+        return back()->with('info','success');
+
+    }
+
+
+
+
     // DELETE
     public function delete(){
         $img = Post::find(request()->id)->image;
-
         Storage::delete('/public/Post/'.$img);
         Post::where('id', request()->id)->delete();
         $totalCount = Post::count();
@@ -56,16 +91,30 @@ class ArticleController extends Controller
 
     }
 
+
+
+
+
+
+
+
+//  PRIVATE FUNCTIONS
     // VALIDATION CHECK
-    private function validationCheckPost($req){
-        Validator::make($req->all(),
-        [
+    private function validationCheckPost($req,$status){
+        $rules =   [
             'post_user_id'=> 'required',
             'post_title' => 'required',
             'post_description' => 'required',
             'post_category' => 'required',
-            'post_img' =>  'required',File::image()->types(['png','jpg','jpeg'])
-        ])->validate();
+            // 'post_img' =>  'required',File::image()->types(['png','jpg','jpeg'])
+        ];
+        if($status == 'update'){
+            $rules['post_img'] =  File::image()->types(['png','jpg','jpeg']);
+        }else{
+            $rules['post_img'] =  ['required',File::image()->types(['png','jpg','jpeg'])];
+        }
+
+        Validator::make($req->all(),$rules)->validate();
     }
 
     private function getData($req){

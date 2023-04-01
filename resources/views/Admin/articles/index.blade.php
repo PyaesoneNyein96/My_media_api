@@ -58,9 +58,14 @@
                                         <a class="nav-link" href="#">
                                             <i class="fa-solid fa-circle-info text-secondary"></i> Detail
                                         </a>
-                                        <a class="nav-link" href="#">
-                                            <i class="fa-regular fa-pen-to-square text-success"></i>
-                                            Edit
+                                        <a class="nav-link">
+                                            <button type="button" class="edit-btn btn px-0 mx-0 py-0"
+                                                data-bs-toggle="modal" data-bs-target="#edit" data-bs-whatever="@mdo">
+                                                <input type="hidden" value="{{ $post->id }}">
+                                                <i class="fa-regular fa-pen-to-square text-success"></i>
+                                                Edit
+                                            </button>
+
                                         </a>
                                         <li class="nav-link delete_btn" style="cursor: pointer">
                                             <input type="hidden" value="{{ $post->id }}">
@@ -101,104 +106,15 @@
                 @endforeach
             </div>
             <!-- ========== End Looping ========== -->
-
-        </div>
-        <!-- /# row -->
-
-        <!-- ========== Start Dialog Add Content Box ========== -->
-        <!-- ================================================== -->
-
-        <div class="modal fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true" role="dialog">
-            <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content shadow">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">New Article</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="{{ route('admin@postCreate') }}" method="post" enctype="multipart/form-data">
-                            @csrf
-                            <input type="hidden" name="post_user_id" value="{{ Auth::id() }}">
-                            <!-- ========== Start Image ========== -->
-
-                            <div class="mb-3">
-                                <img src="" id="preImg" class="mb-2" alt=""
-                                    style="max-height:250px; object-fit:contain; width:100%">
-
-                                <input type="file" id="img" name="post_img" class="d-none form-control form-control-sm"
-                                    onchange="document.getElementById('preImg').src=window.URL.createObjectURL(this.files[0])">
-
-                                <label for="img" class="text-light rounded px-2 text-center  py-1 d-block
-                                bg-success">Select and Preview Image Here</label>
-                                @error('post_img')
-                                <small class="text-danger">
-                                    {{ $message }}
-                                </small>
-                                @enderror
-                            </div>
-                            <!-- ========== End Image ========== -->
-
-                            <!-- ========== Start Title ========== -->
-                            <div class="mb-3">
-                                <label for="title" class="form-label text-muted">Title:</label>
-                                <input type="text" class="form-control shadow-none" name="post_title"
-                                    placeholder="Post Title" style="70px" value="{{ old('post_title') }}">
-                                @error('post_title')
-                                <small class="text-danger">
-                                    {{ $message }}
-                                </small>
-                                @enderror
-                            </div>
-                            <!-- ========== End Title ========== -->
-
-                            <!-- ========== Start Section ========== -->
-
-                            <div class="mb-3">
-                                <label for="para" class="form-label">Content:</label>
-                                <textarea type="text" class="form-control shadow-none" name="post_description" rows="3"
-                                    placeholder=" ">{{ old('post_description') }}</textarea>
-                                @error('post_description')
-                                <small class="text-danger">
-                                    {{ $message }}
-                                </small>
-                                @enderror
-                            </div>
-                            <!-- ========== End Section ========== -->
-
-                            <!-- ========== Start Category ========== -->
-                            <div class="mb-3">
-                                <label for="">Categories</label>
-                                <select name="post_category" class="form-select">
-                                    <option value="#" class="text-muted" selected hidden disabled> - Choice
-                                        Category
-                                    </option>
-                                    @foreach ($categories as $category )
-                                    <option value="{{ $category->id }}">{{ $category->title }}</option>
-                                    @endforeach
-                                </select>
-                                @error('post_category')
-                                <small class="text-danger">
-                                    {{ $message }}
-                                </small>
-                                @enderror
-                            </div>
-                            <!-- ========== End Category ========== -->
-
-
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-sm btn-secondary"
-                                    data-bs-dismiss="modal">Cancle</button>
-                                <button type="submit" class="btn btn-sm btn-primary">Upload</button>
-                            </div>
-                        </form>
-                    </div>
-
-                </div>
-            </div>
         </div>
 
-        <!-- ========== End Dialog Add Content Box ========== -->
+
+        <!-- ========== Start Dialog Add & Edit Content Box ========== -->
+
+        @include('Admin.articles.add-Dialog');
+
+        @include('Admin.articles.edit-Dialog');
+        <!-- ========== End Dialog Add & Edit Content Box ========== -->
 
 
 
@@ -259,7 +175,42 @@
                         });
 
                 // sweetalert end
+            });
 
+            // =-----------= Delete ENd
+
+            $('.edit-btn').click(function(){
+                $editId = $(this).find('input').val();
+
+                $title=$('#titleInput');
+                $oldImg =$('#oldImg-wrap');
+                $content = $('#contextInput');
+                $editUserId = $('#editUserId');
+                $postEditID = $('#PostID');
+
+                const ajaxEdit = () => {
+                    $.ajax({
+                        type:'get',
+                        url:'/admin/post/updateDialog',
+                        data: { 'id': $editId },
+                        dataType:'json',
+                        success:(res)=>{
+                            console.log(res.postEdit);
+                            $title.val(res.postEdit.title );
+                            $content.html(res.postEdit.description);
+                            $editUserId.val(res.postEdit.user_id);
+                            $postEditID.val(res.postEdit.id);
+                            $
+                            $oldImg.html(
+                                ` <img id="oldImg" class="mb-2" alt="" src="{{ asset('Storage/Post/${res.postEdit.image}') }}"
+                                style="max-height:250px; object-fit:contain; width:100%">
+                                `
+                            )
+                        }
+
+                    })
+                }
+                ajaxEdit();
 
             })
 
