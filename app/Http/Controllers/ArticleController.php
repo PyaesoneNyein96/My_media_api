@@ -47,9 +47,12 @@ class ArticleController extends Controller
 
         Storage::delete('/public/Post/'.$img);
         Post::where('id', request()->id)->delete();
+        $totalCount = Post::count();
+
 
         return response()->json(
-            [ 'status' => true], 200);
+            [   'total' => $totalCount
+                ,'status' => true], 200);
 
     }
 

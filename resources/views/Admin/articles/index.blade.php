@@ -31,72 +31,75 @@
                 <h2 class="text-light">There is no Articles yet</h2>
             </div>
             @endif
-            @foreach ($posts as $post )
+            <div class="main">
 
-            <div class="col-lg-4">
-                <div class="card">
 
-                    <div class="card-header">
-                        <div class="d-flex justify-content-between">
-                            <h4 class="px-2 bg-light text-muted">{{ $post->title }} </h4>
+                @foreach ($posts as $post )
 
-                            <!-- ========== Start Nav Setting ========== -->
-                            <div class="user-area dropdown float-right" alt="Setting">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    <i class="fa-solid fa-gear fa-spin px-0"></i>
-                                    <i class="fa fa-cog fa-spin px-0" style="font-size: 12px"></i>
-                                </a>
+                <div class="col-lg-4">
+                    <div class="card">
 
-                                <div class="user-menu dropdown-menu shadow rounded">
-                                    <a class="nav-link" href="#">
-                                        <i class="fa fa-bell fa-shake text-info"></i> Notification
+                        <div class="card-header">
+                            <div class="d-flex justify-content-between">
+                                <h4 class="px-2 bg-light text-muted">{{ $post->title }} </h4>
+
+                                <!-- ========== Start Nav Setting ========== -->
+                                <div class="user-area dropdown float-right" alt="Setting">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        <i class="fa-solid fa-gear fa-spin px-0"></i>
+                                        <i class="fa fa-cog fa-spin px-0" style="font-size: 12px"></i>
                                     </a>
-                                    <a class="nav-link" href="#">
-                                        <i class="fa-solid fa-circle-info text-secondary"></i> Detail
-                                    </a>
-                                    <a class="nav-link" href="#">
-                                        <i class="fa-regular fa-pen-to-square text-success"></i>
-                                        Edit
-                                    </a>
-                                    <li class="nav-link delete_btn" style="cursor: pointer">
-                                        <input type="hidden" value="{{ $post->id }}">
-                                        <i class="fa-solid fa-trash-can text-danger"></i> Delete
-                                    </li>
 
+                                    <div class="user-menu dropdown-menu shadow rounded">
+                                        <a class="nav-link" href="#">
+                                            <i class="fa fa-bell fa-shake text-info"></i> Notification
+                                        </a>
+                                        <a class="nav-link" href="#">
+                                            <i class="fa-solid fa-circle-info text-secondary"></i> Detail
+                                        </a>
+                                        <a class="nav-link" href="#">
+                                            <i class="fa-regular fa-pen-to-square text-success"></i>
+                                            Edit
+                                        </a>
+                                        <li class="nav-link delete_btn" style="cursor: pointer">
+                                            <input type="hidden" value="{{ $post->id }}">
+                                            <i class="fa-solid fa-trash-can text-danger"></i> Delete
+                                        </li>
+
+                                    </div>
                                 </div>
+                                <!-- ========== End Nav Setting ========== -->
+
                             </div>
-                            <!-- ========== End Nav Setting ========== -->
+                        </div>
 
+                        <div class="image">
+                            <img src="{{ asset('Storage/Post/'.$post->image) }}"
+                                style="height:250px; object-fit:contain; width:100%">
+                        </div>
+
+                        <div class="card-body">
+                            <div class="title">
+                                <span class="text-muted small">Date:
+                                    {{ $post->created_at->format('i/ M/ Y')}} |
+                                </span>
+                                <span class="text-muted small">{{ $post->created_at->diffForHumans() }}</span>
+                                <span class="text-muted d-block small">Author: {{ $post->user_name }}</span>
+                                <span class="h6 small text-muted">Category: {{ $post->category_name }}</span>
+                                <hr class=" bg-dark">
+                            </div>
+                            <div class="pb-3" style="height:100px; overflow:hidden">
+                                <p>{{ $post->description }}</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="image">
-                        <img src="{{ asset('Storage/Post/'.$post->image) }}"
-                            style="height:250px; object-fit:contain; width:100%">
-                    </div>
 
-                    <div class="card-body">
-                        <div class="title">
-                            <span class="text-muted small">Date:
-                                {{ $post->created_at->format('i/ M/ Y')}} |
-                            </span>
-                            <span class="text-muted small">{{ $post->created_at->diffForHumans() }}</span>
-                            <span class="text-muted d-block small">Author: {{ $post->user_name }}</span>
-                            <span class="h6 small text-muted">Category: {{ $post->category_name }}</span>
-                            <hr class=" bg-dark">
-                        </div>
-                        <div class="pb-3" style="height:100px; overflow:hidden">
-                            <p>{{ $post->description }}</p>
-                        </div>
-                    </div>
                 </div>
 
-
+                @endforeach
             </div>
-
-            @endforeach
-
             <!-- ========== End Looping ========== -->
 
         </div>
@@ -211,6 +214,7 @@
                 $btn = $(this).find('input')
                 $id= $btn.val();
                 $parent = $(this).parents('.card');
+                $main = $('.main');
 
                 const ajaxFun = () =>{
                     $.ajax({
@@ -219,10 +223,16 @@
                         data:{'id':$id},
                         dataType:'json',
                         success: function(res) {
-                            console.log(res.status);
+
                             if (res.status == true) {
                                 $parent.remove();
-                                console.log('ok');
+                              if(res.total == 0){
+                                $main.html(`
+                                <div class="text-center p-2 mt-5 rounded bg-secondary">
+                                    <h2 class="text-light">There is no Articles yet</h2>
+                                </div>
+                                `);
+                              }
                             }
                         }
                     })
