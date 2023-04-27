@@ -79,9 +79,9 @@
                             </div>
                         </div>
 
-                        <div class="image">
+                        <div class="image bg-info">
                             <img src="{{ asset('Storage/Post/'.$post->image) }}"
-                                style="height:250px; object-fit:contain; width:100%">
+                                style="height:220px; object-fit:fill; width:100%">
                         </div>
 
                         <div class="card-body">
@@ -200,7 +200,8 @@
                             $content.html(res.postEdit.description);
                             $editUserId.val(res.postEdit.user_id);
                             $postEditID.val(res.postEdit.id);
-                            $
+
+
                             $oldImg.html(
                                 ` <img id="oldImg" class="mb-2" alt="" src="{{ asset('Storage/Post/${res.postEdit.image}') }}"
                                 style="max-height:250px; object-fit:contain; width:100%">

@@ -40,7 +40,7 @@ Route::middleware([ 'auth:sanctum',config('jetstream.auth_session'),'verified'])
         Route::post('/category/update',[CategoryController::class,'updateCategory'])->name('admin@categoryUpdate');
         Route::get('/category/delete/{id}', [CategoryController::class,'deleteCategory'])->name('admin@categoryDelete');
 
-        // ADMIN POSTS
+        // ADMIN POSTS or Articles
         Route::get('/post',[ArticleController::class,'index'])->name('admin@articles');
         Route::post('/post/creation',[ArticleController::class,'create'])->name('admin@postCreate');
         Route::get('/post/delete',[ArticleController::class,'delete'])->name('admin@postDelete'); //ajax
@@ -49,5 +49,6 @@ Route::middleware([ 'auth:sanctum',config('jetstream.auth_session'),'verified'])
 
 
         Route::get('/trend',[TrendArticleController::class,'index'])->name('admin@trend');
+        Route::get('/trend_detail/{id}', [TrendArticleController::class,'detail'])->name('admin@trend_detail');
     });
 });

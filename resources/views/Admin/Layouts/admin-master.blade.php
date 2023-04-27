@@ -14,16 +14,16 @@
                 <i class="fa fa-bars"></i>
             </button>
             {{-- <a class="navbar-brand" href="./"><img src="{{ asset('images/logo.png') }}" alt="Logo"></a> --}}
-            <a class="navbar-brand" href="./">My Media</a>
+            <a class="navbar-brand" href="#">My Media</a>
             <a class="navbar-brand hidden" href="./"> M </a>
         </div>
 
         <div id="main-menu" class="main-menu collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="active">
-                    <a href="index.html"> <i class="menu-icon fa fa-dashboard"></i>Admin Dashboard </a>
+                    <a href="#"> <i class="menu-icon fa fa-dashboard"></i>Admin Dashboard </a>
                 </li>
-                <h5 class="menu-tile text-muted my-1">Main</h5><!-- /.menu-title -->
+                <h6 class="menu-tile text-muted my-1">Main</h6><!-- /.menu-title -->
 
                 <li>
                     <a href="{{ route('admin@dashboard') }}"> <i class="menu-icon fa fa-laptop"></i>Dashbaord</a>
@@ -64,7 +64,7 @@
                     <a href="{{ route('admin@trend') }}"> <i class="menu-icon fa fa-area-chart"></i>Trend Articles</a>
                 </li>
 
-                <h3 class="menu-title-cus  text-muted h6">More Options</h3><!-- /.menu-title -->
+
 
                 <li class="menu-item-has-children dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
@@ -74,7 +74,7 @@
                     </a>
                     <ul class="sub-menu children dropdown-menu">
                         <li><i class="menu-icon fa fa-sign-in"></i><a href="{{ route('login') }}">Login</a></li>
-                        <li><i class="menu-icon fa fa-sign-in"></i><a href="page-register.html">Register</a></li>
+                        <li><i class="menu-icon fa fa-sign-in"></i><a href="{{ route('register') }}">Register</a></li>
                         {{-- <li><i class="menu-icon fa fa-paper-plane"></i><a href="pages-forget.html">Forget Pass</a>
                             --}}
                         </li>

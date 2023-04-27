@@ -43,7 +43,7 @@ class ArticleController extends Controller
         }
         $data['image'] = $imgName;
         Post::create($data);
-        return redirect()->back()->with('info','Article successfully uploaded ');
+        return redirect()->back()->with('info','Article successfully uploaded');
     }
 
 
@@ -54,7 +54,11 @@ class ArticleController extends Controller
     public function updatePage(){
         $postEdit = Post::find(request()->id);
         $categories=Category::all();
-        return response()->json(['postEdit'=> $postEdit, 'cat'=> $categories], 200 );
+        logger($postEdit);
+        $oldCat = Category::where('category',$postEdit->category_id);
+        // $cat = 'cc';
+        // dd($cat);
+        return response()->json(['postEdit'=> $postEdit, 'cat'=> $categories , 'oldCat'=> $oldCat], 200 );
     }
 
 // Update function
@@ -62,12 +66,14 @@ class ArticleController extends Controller
         // dd(request()->toArray());
         $data = $this->getData($request);
         $this->validationCheckPost($request,'update');
-
+        $oldImg = Post::find($request->post_id)->image;
+        // dd($oldImg);
         if($request->hasFile('post_img')){
             $img = $request->file('post_img');
             $imgName = uniqid().'_update_'.$img->getClientOriginalName();
             $request->file('post_img')->StoreAs('public/Post',$imgName);
             $data['image'] = $imgName;
+            Storage::delete('/public/Post/'.$oldImg);
         }
         Post::where('id',$request->post_id)->update($data);
         return back()->with('info','success');
@@ -90,10 +96,6 @@ class ArticleController extends Controller
                 ,'status' => true], 200);
 
     }
-
-
-
-
 
 
 

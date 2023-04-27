@@ -61,7 +61,7 @@
                         <label for="">Categories</label>
                         <select name="post_category" class="form-select">
                             <option value="#" class="text-muted" selected hidden disabled> - Choice
-                                Category
+                                {{-- Category {{ $cat }} --}}
                             </option>
                             @foreach ($categories as $category )
                             <option value="{{ $category->id }}">{{ $category->title }}</option>

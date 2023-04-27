@@ -11,7 +11,7 @@
                 <form action="{{ route('admin@postUpdate') }}" method="post" enctype="multipart/form-data">
                     @csrf
                     <input type="hidden" name="post_user_id" id="editUserId">
-                    <input type="text" name="post_id" id="PostID">
+                    <input type="hidden" name="post_id" id="PostID">
                     <!-- ========== Start Image ========== -->
                     <div class="mb-3">
                         <div class="row">
@@ -90,7 +90,7 @@
 
                     <div class="modal-footer">
                         <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Cancle</button>
-                        <button type="submit" class="btn btn-sm btn-primary">Upload</button>
+                        <button type="submit" class="btn btn-sm btn-success">Update</button>
                     </div>
                 </form>
             </div>
